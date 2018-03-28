@@ -19,10 +19,6 @@ import io.karte.android.tracker.firebase.KarteMessageHandler;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
-  private static final String EXTRA_PUSH_FLAG = "krt_push_notification";
-  private static final String EXTRA_CAMPAIGN_ID = "krt_campaign_id";
-  private static final String EXTRA_SHORTEN_ID = "krt_shorten_id";
-
   @Override
   public void onMessageReceived(RemoteMessage remoteMessage) {
 
