@@ -8,6 +8,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 
 import io.karte.android.tracker.Tracker;
+import io.karte.android.tracker.Variables;
 
 public class SampleApp extends Application {
 
@@ -17,6 +18,7 @@ public class SampleApp extends Application {
   public void onCreate() {
     super.onCreate();
     Tracker.init(this, APP_KEY);
+    Variables.getInstance(this).fetch();
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       createChannel(this);
     }
