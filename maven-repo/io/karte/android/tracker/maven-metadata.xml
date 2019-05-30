@@ -3,7 +3,7 @@
   <groupId>io.karte.android</groupId>
   <artifactId>tracker</artifactId>
   <versioning>
-    <release>1.5.6</release>
+    <release>1.6.0</release>
     <versions>
       <version>1.0.0</version>
       <version>1.0.1</version>
@@ -37,7 +37,8 @@
       <version>1.5.4</version>
       <version>1.5.5</version>
       <version>1.5.6</version>
+      <version>1.6.0</version>
     </versions>
-    <lastUpdated>20190423063300</lastUpdated>
+    <lastUpdated>20190530035027</lastUpdated>
   </versioning>
 </metadata>
