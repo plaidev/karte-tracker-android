@@ -19,6 +19,12 @@ import io.karte.android.tracker.firebase.MessageHandler;
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
   @Override
+  public void onNewToken(String s) {
+    super.onNewToken(s);
+    Tracker.getInstance(this).trackFcmToken(s);
+  }
+
+  @Override
   public void onMessageReceived(RemoteMessage remoteMessage) {
 
     boolean handled = MessageHandler.handleMessage(this, remoteMessage);
